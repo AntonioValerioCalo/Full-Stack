@@ -1,0 +1,215 @@
+
+
+main {
+    
+  width: 478px;
+  height: 486px;
+  display: grid;
+  grid-template-columns: 1fr;
+ grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "container-all";
+  background-color: white;
+  justify-self: stretch;
+}
+
+.container-all {
+  gap: 0px 0px;
+  justify-content:center;
+   
+  grid-area: container-all;
+  border-radius: 1rem;
+  background-color: rgb(199, 196, 196);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 110px);
+  grid-template-areas:
+    "sum sum sum sum"
+    "plus minus moltiplier shared"
+    "seven eight nine sum-sign"
+    "four five six sum-sign"
+    "one two three sum-sign"
+    "zero dot ac sum-sign ";
+    
+}
+.sum {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-top: 10px;
+  display: grid;
+  grid-area: sum;
+  color: white;
+
+  background-color: rgb(62, 62, 65);
+}
+.sum > .sum-p {
+  display: inline;
+  place-self: flex-end;
+  margin-right: 10px;
+}
+.plus {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  display: grid;
+  grid-area: plus;
+  place-content: center;
+
+  background-color: rgb(142, 142, 144);
+}.minus { border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  grid-area: minus;
+  place-content: center;
+  display: grid;
+background-color: rgb(142, 142, 144);
+}
+.moltiplier {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  grid-area: moltiplier;
+  place-content: center;
+  display: grid;
+background-color: rgb(142, 142, 144);}
+.shared {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
+    border-color:rgb(207, 207, 211);
+  grid-area: shared;
+  place-content: center;
+  display: grid;
+  background-color: rgb(142, 142, 144);
+}
+
+.seven {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: seven;
+}
+.eight {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: eight;
+}
+
+.nine {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: nine;
+}
+.four {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: four;
+}
+.five {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: five;
+}
+.six {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: six;
+}
+.one {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: one;
+}
+.two {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: two;
+}
+.three {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: three;
+}
+
+.zero {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: zero;
+}
+.dot {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+ 
+  place-content: center;
+  display: grid;
+  grid-area: dot;
+}
+.ac {
+    border-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-color:rgb(207, 207, 211);
+  place-content: center;
+  display: grid;
+  grid-area: ac;
+}
+.sum-sign {
+    border-bottom-right-radius: 1rem;
+    border-bottom-style:solid;
+    border-right-style:solid ;
+    border-color: rgb(207, 207, 211);
+  background-color: salmon;
+  place-content: center;
+  display: grid;
+  grid-area: sum-sign;
+}
+p {
+    font-weight: bold;
+    font-size: 20px;
+  display: inline-block;
+}
