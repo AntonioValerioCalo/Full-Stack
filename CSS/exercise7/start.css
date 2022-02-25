@@ -1,0 +1,52 @@
+body{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    grid:minmax(100px,auto);
+    grid-template-areas:
+    "g g g g g g "
+    "y y r r b b"
+    "o o o o b b"
+
+
+}
+
+#green{
+    grid-area:g;
+}
+
+#yellow{
+    grid-area:y;
+}
+
+#yellow ul{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+#yellow ul li{
+    width: 40px;
+}
+#orange{
+    grid-area: o;
+}
+
+#red{
+    grid-area:r;
+}
+
+#red ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#red ul li {
+    width:40px;
+}
+
+#blue{
+    grid-area:b;
+}
+
+section li{
+    display: inline;
+}

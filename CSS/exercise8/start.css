@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: space-around;
+}
+
+#yellow{
+    order:-1;
+}
+#red{
+    order:-1;
+}
+#orange{
+    width:30vw;
+}
