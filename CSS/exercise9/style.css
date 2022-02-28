@@ -121,18 +121,28 @@ picture img{
 
 }
 
-@media screen and (min-width: 320px) and (max-width:768px)  {
+@media screen and (max-width:1144px){
+      body{
+          gap:10px;
+          display: inline-flex;
+      }
+}
+
+@media screen and (max-width:768px){
+      body{
+          justify-content: flex-start;
+          flex-wrap: wrap;
+         
+      }
+}
+@media screen and (min-width:430px) and (max-width:744px){
     body{
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap:10px;
-        
-    
+         justify-content: center;
     }
-
-    
+}
+@media screen and (max-width:430px){
+    body{
+        justify-content:center;
     }
-
-
-
+}
 
