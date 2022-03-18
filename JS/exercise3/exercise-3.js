@@ -1,8 +1,8 @@
-const students = ['Paul', 'George', 'Lucas'];
+const students = ["Paul", "George", "Lucas"];
 
 function addStudent(student) {
-students[3]='Marco';
+  students[3] = "Marco";
 }
 
-addStudent('Marco');
+addStudent("Marco");
 console.log(Object.entries(students));
