@@ -5,6 +5,7 @@ function sumUntil(maxValue) {
   for (let value = 1; value <= maxValue; value++) {
     valuePlus += value;
     sumValue.push("+" + value);
+    
   }
 
   return sumValue + "=" + valuePlus;
