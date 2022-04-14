@@ -1,24 +1,46 @@
 <html>
-  <body>
-    <div id="container">
-      <form>
-        <div>
-          <label>First Name:</label>
-          <input type="text" class="form-input" id="firstName" value="Mario"/>
-        </div>
-        <div>
-          <label>Last Name:</label>
-          <input type="text" class="form-input" id="lastName" value="Rossi"/>
-        </div>
-        <div>
-          <label>Age:</label>
-          <input type="number" class="form-input" id="age" value="25"/>
-        </div>
-      </form>
-    </div>
-  </body>
+
+<body>
+  <div id="container">
+    <form>
+      <div>
+        <label>First Name:</label>
+        <input type="text" class="form-input" id="firstName" value="Mario" />
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input type="text" class="form-input" id="lastName" value="Rossi" />
+      </div>
+      <div>
+        <label>Age:</label>
+        <input type="number" class="form-input" id="age" value="25" />
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
 
 <script>
-  // code here
+  // const fullname = document.getElementById("container");
+  // const age = 
+  // console.log(`${fullname.firstElementChild.textContent} ` );
+  // const firstName = document.getElementById("firstName").value
+  //   const labelFirstName = document.getElementById("firstName").parentElement.firstElementChild.textContent
+  //   const lastName = document.getElementById("lastName").value
+  //   const labelLastName = document.getElementById("lastName").parentElement.firstElementChild.textContent
+  //   const age = document.getElementById("age").value
+  //   const labelAge = document.getElementById("age").parentElement.firstElementChild.textContent
+  //   const label = document.querySelectorAll("label")
+  //   console.log(`${labelFirstName} ${firstName}
+  //                ${labelLastName} ${lastName}
+  //                ${labelAge} ${age}`)
+  const fullname = document.querySelectorAll(".form-input");
+  fullname.forEach((key) => {
+    const other = key.previousElementSibling;
+
+    console.log(`${other.textContent} ${key.value}`);
+
+  });
+
 </script>

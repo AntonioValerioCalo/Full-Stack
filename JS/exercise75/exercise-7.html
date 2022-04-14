@@ -1,15 +1,18 @@
 <html>
-  <body>
-    <div id="container">
-      <h2>Person's Form</h2>
-      <form id="person-form">
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </body>
+
+<body>
+  <div id="container">
+    <h2>Person's Form</h2>
+    <form id="person-form">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
 </html>
 
 <script>
+  const personFormLoaded = new CustomEvent("personFormLoaded", { detail: "person form loaded", });
   function generateLabel(textContent) {
     const label = document.createElement("label");
     label.textContent = textContent;
@@ -69,6 +72,8 @@
     form.prepend(firstNameInput);
 
     form.addEventListener("submit", submitPersonForm);
+    form.dispatchEvent(personFormLoaded);
+    console.log(personFormLoaded.detail);
   }
 
   window.addEventListener("DOMContentLoaded", initForm);

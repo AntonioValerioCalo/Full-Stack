@@ -1,15 +1,23 @@
 <html>
-  <body>
-    <div id="container">
-      <button type="button" id="fetch-post">
-        Fetch Post from LocalStorage
-      </button>
 
-      <h2>Post: <span id="post-title"></span></h2>
-    </div>
-  </body>
+<body>
+  <div id="container">
+    <button type="button" id="fetch-post">
+      Fetch Post from LocalStorage
+    </button>
+
+    <h2>Post: <span id="post-title"></span></h2>
+  </div>
+</body>
+
 </html>
 
 <script>
-  // code here
+  const reCall = document.getElementById("fetch-post");
+  reCall.addEventListener("click", paste);
+  async function paste() {
+    let titleCopy = await JSON.parse(localStorage.getItem("value"));
+    let title = await document.getElementById("post-title");
+    title.innerText = titleCopy.title;
+  }
 </script>

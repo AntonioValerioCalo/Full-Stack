@@ -14,5 +14,11 @@
 </html>
 
 <script>
-  // code here
+   const ul = document.querySelector(".hero-list")
+  ul.addEventListener("mouseover",(e)=> {
+    e.target.style.color="red"
+  })
+  ul.addEventListener("mouseout",(e)=> {
+    e.target.style.color="black" //con transparent il testo scompare
+  })
 </script>
