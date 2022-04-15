@@ -1,7 +1,12 @@
 function nicknameMap(persons) {
   // ...
-  const newNickname = persons.map(({ name, age }) => ({ [name]: age }));
-  return newNickname;
+  //const newNickname = persons.map(({ name, age }) => ({ [name]: age }));
+  //return newNickname;
+  let completed = [];
+  for (value of persons) {
+    completed.push(`${value.name}-${value.age}`);
+  }
+  return completed;
 }
 
 const persons = [

@@ -11,3 +11,10 @@ function sumUntil(maxValue) {
   return sumValue + "=" + valuePlus;
 }
 console.log(sumUntil(5));
+
+
+let value= 3 > 2 > 1 === false;
+console.log(value);
+const obj = { foo: 2 }
+obj.bar = 4
+console.log(obj)

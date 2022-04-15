@@ -1,6 +1,11 @@
 function getKeys(obj) {
   // ...
-  console.log(Object.keys(person));
+  //console.log(Object.keys(person));
+  let keyWord = [];
+  for (item in obj) {
+    keyWord.push(`${item}`);
+  }
+  return keyWord;
 }
 
 const person = {
